@@ -1,0 +1,21 @@
+ <!DOCTYPE html>
+<HEAD>
+    <TITLE> Calculate the number of words</TITLE>
+</HEAD>
+<BODY style = "background-color: rgb(255, 164, 220)">
+    <H1> Enter your text in the Blue Box</H1>
+    <FORM name = "wordcount">
+        <TEXTAREA rows = "17" name = "wordcount2" cols = "50" wrap = "virtual" style = "color:rgb(250, 192, 106);
+         background-color:rgb(3, 161, 189); font-size: 23px;"></TEXTAREA><br>
+        <INPUT type ="button" value="Calculate No. of Words" onClick="countit()">
+            <INPUT type = "text" name = "wordcount3" size="20">
+    </FORM>
+    <script type="text/javascript">
+    function countit(){
+        var formcontent = document.wordcount.wordcount2.value
+        formcontent = formcontent.split(" ")
+        document.wordcount.wordcount3.value = formcontent.length
+    }
+    </script>
+</BODY>
+</html>
